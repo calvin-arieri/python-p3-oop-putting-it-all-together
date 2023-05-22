@@ -1,24 +1,17 @@
 #!/usr/bin/env python3
 
 class Shoe:
-    def __init__ (self, brand, color):
+    def __init__ (self, brand, size ):
         self.brand = brand
-        self.color = color
-
-    def whoIsWearing(self):
-        print ("I am wearing a ", self.brand, " ", self.color, " shoe")
-airforce = Shoe("Nike", "Black")
-
-airforce.whoIsWearing()
-
-class Soal (Shoe):
-    def __init__(self, brand, color, make, size):
-        super().__init__(brand, color)
         self.size = size
-        self.make = make
+    def __str__(self):
+        print(self.size)   
+    def cobble():
+        print("Your shoe is as good as new!")
+    def condition():
+        print("New")        
 
-    def whoIsWearing(self):
-        print(f"i am wearing a shoe of {self.brand}, it is color {self.color} and of make {self.make}, and it is number {self.size} in size")
+stan_smith = Shoe("Addidas", 9)
+stan_smith.cobble()
+stan_smith.size
 
-airforce = Soal("Nike", "Blue", "Air Force", 4)
-airforce.whoIsWearing()

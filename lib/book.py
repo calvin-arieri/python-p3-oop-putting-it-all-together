@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 
 class Book:
-    def __init__(self, tittle, author, year ):
-        self.tittle = tittle
-        self.author = author
-        self.year = year
+    def __init__(self, title, page_count):
+        self.title = title
+        self.page_count = page_count
+
     def likesOfReader(self):
-        print("i like reading", self.tittle, "written by", self.author, "in the year", self.year)
+        print("i like reading", self.title, "It has" , self.page_count)
     
-article = Book ("A Doll's House", "Calvin Arieri", 1983)
-article.likesOfReader()
+book = Book ("And Then There Were None", 272)
+book.title
+book.page_count
+
 
 
     
